@@ -1,0 +1,32 @@
+h1{
+    color: aqua;
+    text-align: center;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 400px;
+    align-items: center;
+    gap: 60px;
+}
+
+#conteudo{
+    display: grid;
+    /* align-content: center; */
+    justify-items: center;
+}
+
+.texto{
+    border: 5px solid aqua;
+    height: fit-content;
+    width: fit-content;
+}
+
+#autor{
+    color: aqua;
+    border: 5px solid black;
+    padding: 10px;
+    border-radius: 30px;
+    width: fit-content;
+}

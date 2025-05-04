@@ -1,0 +1,32 @@
+.rosinha{
+    color: magenta;
+    font-size: 20px;
+    list-style-type: disc;
+}
+
+#lista{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.tarefas{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+body {
+    background-color: cyan;
+}
+
+ol {
+    padding: 10px;
+    padding-left: 50px;
+    background-color: white;
+    border: 3px solid magenta;
+}
+
+h2 {
+    font-size: 30px;
+    color: white;
+}

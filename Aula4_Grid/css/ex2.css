@@ -1,0 +1,43 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 150px 1fr; /* Menu fixo à esquerda, conteúdo ocupa resto */
+    grid-template-rows: auto 1fr auto; /* Header e footer com altura automática, conteúdo ocupa espaço restante */
+    grid-template-areas:
+      "header header"
+      "menu content"
+      "footer footer";
+    height: 100vh; /* Ocupa a altura total da tela */
+    gap: 0;
+    margin: 0;
+}
+
+.header, .menu, .content, .footer {
+    margin: 0;
+}
+  
+.header {
+    grid-area: header;
+    background: red;
+    padding: 20px;
+    text-align: center;
+}
+  
+.menu {
+    grid-area: menu;
+    background: blue;
+    padding: 15px;
+}
+  
+.content {
+    grid-area: content;
+    background: green;
+    padding: 20px;
+    text-align: center;
+}
+  
+.footer {
+    grid-area: footer;
+    background: yellow;
+    padding: 30px;
+    text-align: center;
+}

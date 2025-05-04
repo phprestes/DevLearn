@@ -1,0 +1,22 @@
+.rosinha{
+    color: magenta;
+    font-size: 20px;
+    list-style-type: disc;
+}
+
+body {
+    background-color: cyan;
+}
+
+ol {
+    width: 250px;
+    padding: 30px;
+    padding-left: 60px;
+    background-color: white;
+    border: 3px solid magenta;
+}
+
+h2 {
+    font-size: 30px;
+    color: white;
+}
