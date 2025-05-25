@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatinho</title>
+    <button onclick="pegarGato()">Gatinho</button>
+    <br>
+    <img id="gato" width="500px" height="500px">
+</head>
+<body>
+    <script>
+        async function pegarGato() {
+            const response = await fetch("https://api.thecatapi.com/v1/images/search");
+            const dados = await response.json();
+            
+            document.getElementById("gato").setAttribute("src", dados[0].url);
+        }
+
+        pegarGato();
+    </script>
+</body>
+</html>
